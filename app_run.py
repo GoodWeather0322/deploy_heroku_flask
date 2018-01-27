@@ -16,7 +16,7 @@ def index():
         history_dic['Name'] = _data.Name
         history_dic['Id'] = _data.Id
         history_dic['Description'] = _data.Description
-        history_dic['CreateDate'] = _data.CreateDate.strftime('%Y/%m/%d %H:%M:%S')
+        #history_dic['CreateDate'] = _data.CreateDate.strftime('%Y/%m/%d %H:%M:%S')
         history_list.append(history_dic)
         history_dic = {}
     return render_template('index.html', **locals())
